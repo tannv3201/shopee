@@ -20,6 +20,10 @@
     min-height: 26px;
 }
 
+.header__navbar-item--has-qr:hover .header__qr{
+    display: block;
+}
+
 .header__navbar-item,
 .header__navbar-item-link
  {
@@ -73,3 +77,50 @@
     cursor: text;
     color: var(--while-color);
 }
+
+/* Header QR Code */
+.header__qr {
+    background-color: var(--while-color);
+    width: 186px;
+    position: absolute;
+    left: 0;
+    /* Top 100% : chiều cao của thẻ chứa nó */
+    top: 119%; 
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+/*Cầu nối Hover QR code */
+.header__qr::before {
+    content: "";    
+    display: block; 
+    position: absolute;
+    left: 0;
+    top: -16px;
+    height: 20px;
+    width: 100%;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-link:first-child {
+    margin-left: 11px;
+}
+.header__qr-link:last-child {
+    margin-right: 11px;
+}
+
+
+.header__qr-download-img {
+    height: 15px;
+}
+
