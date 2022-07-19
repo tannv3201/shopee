@@ -156,6 +156,10 @@
         flex: unset;
     }
 
+    .footer__wrap:nth-of-type(5) .footer__heading {
+        text-align: center;
+    }
+
     .footer__download-app-link {
         display: block;
         padding: 6px 8px;
